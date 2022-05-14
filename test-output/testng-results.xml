@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-01-22T17:36:30 ART" name="Suite" finished-at="2020-01-22T17:38:01 ART" duration-ms="90993">
+    <groups>
+    </groups>
+    <test started-at="2020-01-22T17:36:30 ART" name="TEST - Validating the navigation bar" finished-at="2020-01-22T17:36:55 ART" duration-ms="25672">
+      <class name="Tutorial.ValidateNavigationBarTest">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:Tutorial.ValidateNavigationBarTest@815b41f]" started-at="2020-01-22T17:36:30 ART" name="SetUp" finished-at="2020-01-22T17:36:55 ART" duration-ms="25466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="validateTitle()[pri:0, instance:Tutorial.ValidateNavigationBarTest@815b41f]" started-at="2020-01-22T17:36:55 ART" name="validateTitle" finished-at="2020-01-22T17:36:55 ART" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTitle -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:Tutorial.ValidateNavigationBarTest@815b41f]" started-at="2020-01-22T17:36:55 ART" name="TearDown" finished-at="2020-01-22T17:36:55 ART" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- Tutorial.ValidateNavigationBarTest -->
+    </test> <!-- TEST - Validating the navigation bar -->
+    <test started-at="2020-01-22T17:36:56 ART" name="TEST - Validating the title page" finished-at="2020-01-22T17:37:21 ART" duration-ms="25778">
+      <class name="Tutorial.ValidateTitleTest">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:Tutorial.ValidateTitleTest@79079097]" started-at="2020-01-22T17:36:56 ART" name="SetUp" finished-at="2020-01-22T17:37:21 ART" duration-ms="25672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="validateTitle()[pri:0, instance:Tutorial.ValidateTitleTest@79079097]" started-at="2020-01-22T17:37:21 ART" name="validateTitle" finished-at="2020-01-22T17:37:21 ART" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTitle -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:Tutorial.ValidateTitleTest@79079097]" started-at="2020-01-22T17:37:21 ART" name="TearDown" finished-at="2020-01-22T17:37:21 ART" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- Tutorial.ValidateTitleTest -->
+    </test> <!-- TEST - Validating the title page -->
+    <test started-at="2020-01-22T17:37:22 ART" name="TEST - Validating the App" finished-at="2020-01-22T17:37:22 ART" duration-ms="2">
+    </test> <!-- TEST - Validating the App -->
+    <test started-at="2020-01-22T17:37:22 ART" name="TEST - Validating the Home page" finished-at="2020-01-22T17:38:01 ART" duration-ms="38990">
+      <class name="Tutorial.HomePageTest">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:Tutorial.HomePageTest@510f3d34]" started-at="2020-01-22T17:37:22 ART" name="SetUp" finished-at="2020-01-22T17:37:27 ART" duration-ms="5042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tutorial.HomePageTest@510f3d34]" started-at="2020-01-22T17:37:27 ART" name="basePageNavigation" data-provider="getData" finished-at="2020-01-22T17:37:45 ART" duration-ms="17957" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[restricted@a.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456789]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Restricted user]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a href="http://qaclickacademy.usefedora.com/sign_in">...</a> is not clickable at point (994, 15). Other element would receive the click: <div class="listbuilder-popup-content">...</div>
+  (Session info: chrome=79.0.3945.117)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-R44QD4T', ip: '192.168.1.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\rodri\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51411}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c6c18e73531af2642f42d1269f0981c4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="http://qaclickacademy.usefedora.com/sign_in">...</a> is not clickable at point (994, 15). Other element would receive the click: <div class="listbuilder-popup-content">...</div>
+  (Session info: chrome=79.0.3945.117)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-R44QD4T', ip: '192.168.1.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\rodri\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51411}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c6c18e73531af2642f42d1269f0981c4
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at Tutorial.HomePageTest.basePageNavigation(HomePageTest.java:25)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tutorial.HomePageTest@510f3d34]" started-at="2020-01-22T17:37:45 ART" name="basePageNavigation" data-provider="getData" finished-at="2020-01-22T17:38:01 ART" duration-ms="15297" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nonrestricted@a.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456789]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Non Restricted user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:Tutorial.HomePageTest@510f3d34]" started-at="2020-01-22T17:38:01 ART" name="TearDown" finished-at="2020-01-22T17:38:01 ART" duration-ms="59" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- Tutorial.HomePageTest -->
+    </test> <!-- TEST - Validating the Home page -->
+  </suite> <!-- Suite -->
+</testng-results>
